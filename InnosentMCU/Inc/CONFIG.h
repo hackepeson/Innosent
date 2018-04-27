@@ -43,7 +43,7 @@
 
 /* CW-modulation settings	----------------------------------------------------------------------------------------*/
 /* sample time	400 = default*/
-#define SAMPLING_PERIOD		(200)		/*	in [µs] */
+#define SAMPLING_PERIOD		(400)		/*	in [µs] */
 
 /* cycle time	200000*/
 #define CYCLE_DURATION		(20000u)	/*	measurement cycle duration [µs] */

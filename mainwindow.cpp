@@ -182,5 +182,11 @@ void MainWindow::stopUpdate()
 
 void MainWindow::saveFile()
 {
+  QString pdfFileName("pdf.pdf");
 
+  QString fileName = QFileDialog::getSaveFileName(this, tr("Save to PDF"), pdfFileName, tr("PDF Files (*.pdf)"));
+  if (!fileName.isEmpty())
+  {
+    ui->customPlot->savePdf(fileName);
+  }
 }
